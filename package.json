@@ -2,15 +2,19 @@
   "name": "reactwithasp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
+  "main": "src/Index.js",
+  "dependencies": {
+    "path": "^0.12.7",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
+  "devDependencies": {
+    "webpack-dev-server": "^3.9.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "webpack --config webpack.config.js"
+    "compile": "webpack --config webpack.config.js",
+    "start:dev": "webpack-dev-server --hot"
   },
   "author": "",
   "license": "ISC"
